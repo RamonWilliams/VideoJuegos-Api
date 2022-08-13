@@ -7,7 +7,7 @@ const getAll = async (req, res, next) => {
         return res.json({
             status: 200,
             message: 'Recovered all games',
-            data: {game }
+            data: {game}
         });
     } catch (error) {
         return next(setError(500, 'Failed all codes'));
